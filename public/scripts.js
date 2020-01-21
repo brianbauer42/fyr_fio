@@ -1,4 +1,5 @@
-// A simple table/2D array will store all the reagents. A dictionary would probably be a better choice for JS, though.
+// A simple table/2D array will store all the reagents.
+// A dictionary would probably be a better choice for JS.
 // Format: [ name, value, units]
 // Example: ["Reagent A", 50, "uL"]
 const reagentsTable = [];
@@ -58,9 +59,11 @@ const addReagent = () => {
     // Don't allow null values
     if (reagent === "") {
         alert("Please fill in reagent name!")
+        return;
     }
     else if (amount === "") {
         alert("Please fill in amount name!")
+        return;
     }
     
     // Save the reagent to our local reagent table.
