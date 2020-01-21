@@ -1,0 +1,24 @@
+body {
+    background-color: gray;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 200px 100px 200px auto;
+    grid-row-gap: 6px;
+    grid-column-gap: 10px;
+}
+
+.header-row {
+    border-bottom: 3px solid black;
+}
+
+.ra-amount {
+    text-align: right;
+}
+
+#ra-amount-input {
+    float: right;
+    text-align: right;
+    width: 50px;
+}

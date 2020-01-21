@@ -2,17 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
     <title>FYR FIO Task</title>
   </head>
   <body>
+    <div>
+        <img src="https://fyrdiagnostics.com/wp-content/uploads/2017/11/FYR-logo_website-header-1.png"/>
+        <h2>Enter reagent quantities below</h2>
+        <div id='grid'>
 
-    <h1> This is a test. </h1>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
+            <div class="header-row">Reagent</div>
+            <div class="header-row">Quantity</div>
+            <div class="header-row">Unit</div>
+            <div></div>
 
-    <div id="root"></div>
-    <script type="text/javascript" src="../static/bundle.js"></script>
-
+            <div id="input-row-begin"><input type="text" id="ra-name-input"></div>
+            <div><input type="text" id="ra-amount-input"></div>
+            <div>
+                <select id="ra-unit-input">
+                    <option value="ml">ml</option>
+                    <option value="mg">mg</option>
+                    <option value="g">g</option>
+                    <option value="mg/ml">mg/ml</option>
+                    <option value="uL">uL</option>
+                    <option value="U/uL">U/uL</option>
+                </select>
+            </div>
+            <div><button id="add-button" onclick="addReagent()">Add Reagent</button></div>
+        </div>
+    </div>
   </body>
+  <script src="./scripts.js"></script> 
 </html>

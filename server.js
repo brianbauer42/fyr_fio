@@ -12,15 +12,14 @@ const config = {
 
 const app = express();
 
-app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 
 
 // ---------------- API ROUTES ----------------
-// app.post("/api/create", /* authenticationCheck, */ createExp);
-// app.get("/api/retrieve/:id", /* authenticationCheck, */ getExpByID);
+// app.post("/api/save", /* authenticationCheck, */ createExperiment);
+// app.get("/api/retrieve/:id", /* authenticationCheck, */ getExperimentByID);
 
 
 // ---------------- Connection to Databae -----------
